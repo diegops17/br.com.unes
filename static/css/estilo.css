@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(../img/fundo2.png) repeat;
+}
+
+.div-principal{
+    max-width: 900px
+}

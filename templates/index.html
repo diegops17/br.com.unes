@@ -1,7 +1,38 @@
 {% extends 'base.html' %}
 
-{% block title %}Página Principal{% endblock %}</h1>
+{% block title %}
+  UNES - Página Principal
+{% endblock %}</h1>
+
+{% block header %}
+  {{ super() }}
+{% endblock %}
 
 {% block conteudo %}
-  <h1>Página Principal da Página</h1>
+  <div class="row"> <!--CAPA-->
+    <img src="../static/img/capa.png" class="img-fluid rounded mt-4">
+  </div>
+
+  <!--Corpo principal da página-->
+  <main class="row">
+    <main class="row">
+      <div class="col-12 ">
+        <h1 class="fw-bold h4 mt-3">Sobre a universidade</h1>
+        <p class="monospace">
+          Lorem <span class="fw-bold">Ipsum is simply</span> dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        </p>
+
+        <p class="monospace">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries.
+        </p>
+      </div>
+  </main>
 {% endblock %}
