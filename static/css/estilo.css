@@ -21,6 +21,25 @@ input{
     margin-bottom: 0.5rem;
 }
 
+section.section-cinco-motivos{
+    padding-bottom: 8rem;
+}
+
+footer{
+    position: relative;
+    bottom:0;
+}
+
+.btnContato{
+    margin-top: 0.5rem;
+}
+
+.paragrafo-rodape{
+    display: flex;
+    margin-top: 3rem;
+}
+
+
 /*X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     p{

@@ -1,5 +1,4 @@
-#import mysql.connector
-import mysql
+import mysql.connector
 
 conexao = mysql.connector.connect(
     host='localhost',
