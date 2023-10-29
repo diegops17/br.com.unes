@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  UNES - Contato
+{% endblock %}</h1>
+
+{% block header %}
+  {{ super() }}
+{% endblock %}
+
+{% block conteudo %}
+<main>
+  <!--Sessão Quem somos-->
+  <section class="row">
+      <div class="col-12">
+          <h1 class="fw-bold h5 mt-4">Entre em contato</h1>
+          <p class="paragrafo-corpo">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+      </div>
+  </section>
+  <hr>
+  <!--Sessão 5 motivos-->
+  <section class="row section-cinco-motivos">
+      <div class="col-12">
+          <form class="formulario" action="/contato" method="POST" enctype="multipart/form-data">
+              <label name="endereco_email" for="endereco_email">Seu e-mail:</label>
+              <input type="email" id="endereco_email" name="endereco_email" placeholder="E-mail" required>
+
+              <label name="assunto" for="assunto">Assunto:</label>
+              <input type="text" id="assunto" name="assunto"  placeholder="Assunto">
+
+              <label name="descricao" for="descricao">Descrição:</label>
+              <textarea id="descricao" name="descricao" rows="2" cols="22"></textarea>
+
+              <button type="submit" class="btn btn-outline-dark btn-sm mt-1 rounded btnContato">
+                  Enviar
+              </button>
+          </form>
+      </div>
+  </section>
+</main>
+{% endblock %}
